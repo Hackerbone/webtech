@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I got the img in me</title>
+  </head>
+  <body>
+    <h2>Admission Form</h2>
+
+    <form>
+      <fieldset>
+        <legend
+          style="
+            color: blue;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+          "
+        >
+          Details
+        </legend>
+
+        <p>
+          <label> Name: </label>
+          <input type="text" placeholder="Enter your name here" />
+        </p>
+        <p>
+          <label> Address: </label>
+          <input type="text" placeholder="Enter you address here" />
+        </p>
+        <p>
+          <label> Password: </label>
+          <input type="password" placeholder="Enter your password" />
+        </p>
+
+        <p>
+          <label> Gender: </label>
+          <input type="radio" name="gender" value="Male" />
+          <label>Male</label>
+          <input type="radio" name="gender" value="Female" />
+          <label>Female</label>
+        </p>
+
+        <p>
+          <input type="checkbox" name="vehicle" checked />
+          <label>Own Vehicle</label>
+        </p>
+
+        <p>
+          <input type="checkbox" name="hostel" />
+          <label>Hostel Required</label>
+        </p>
+
+        <p>
+          <label>Country</label>
+
+          <select name="country">
+            <option value="IND">INDIA</option>
+            <option value="US">AMERICA</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Comments</label>
+          <textarea placeholder="Place your text here"> </textarea>
+        </p>
+
+        <p>
+          <label>Attachments</label>
+          <input type="file" placeholder="Browse" />
+        </p>
+        <input type="submit" name="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
