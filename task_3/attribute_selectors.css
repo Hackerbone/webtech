@@ -1,0 +1,19 @@
+p[target]{
+    color: red;
+}
+p[target*="prajwal"]{
+    color: blue;
+    text-align: center;
+}
+p[target~="man"]
+{
+    color:rgb(61, 20, 185);
+    border: dotted;
+}
+p[target$=mayur]
+{
+    color: blueviolet;
+    text-decoration: line-through;
+    text-align: center;
+    
+}

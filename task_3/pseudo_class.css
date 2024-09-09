@@ -1,0 +1,16 @@
+a:link{
+    text-decoration:dashed ;
+    color: aqua;
+}
+a:visited{
+    text-decoration:wavy;
+    color: blue;
+}
+a:hover{
+   
+    color: rgb(128, 226, 43);
+
+}
+div:hover{
+    background-color: pink;
+}
