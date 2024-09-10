@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>JS Can change styles</h2>
+    <h2>JavaScript Can change styles</h2>
     <p id="text" style="color: blue;">
         This text is blue and 20px in size.
     </p>
 
     <button
-        onclick='document.getElementById("text").style.color = "red"; document.getElementById("text").style.fontSize = "2rem";alert("Button Clicked!")'
-    >Click Me</button>
+        onclick='document.getElementById("text").innerHTML="The text is now red and 32px in size";document.getElementById("text").style.color = "red"; document.getElementById("text").style.fontSize = "2rem";alert("Button Clicked!")'
+    >Change Style</button>
 </body>
 </html>
