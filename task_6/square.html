@@ -42,16 +42,16 @@
             currentBottom = parseInt(currentBottom);
 
             if(direction == 'left'){
-                square.style.left = currentLeft - 10 + 'px';
+                square.style.left = currentLeft - 60 + 'px';
             }
             if(direction == 'top'){
-                square.style.top = currentTop - 10 + 'px';
+                square.style.top = currentTop - 60 + 'px';
             }
             if(direction == 'down'){
-                square.style.top = currentTop + 10 + 'px';
+                square.style.top = currentTop + 60 + 'px';
             }
             if(direction == 'right'){
-                square.style.left = currentLeft + 10 + 'px';
+                square.style.left = currentLeft + 60 + 'px';
             }
         }
     </script>
@@ -63,6 +63,7 @@
             background-color: royalblue;
             margin: 2rem;
             position: relative;
+            transition: all 0.2s ease-in-out;
         }
     </style>
 </body>
