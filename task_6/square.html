@@ -54,16 +54,34 @@
                 square.style.left = currentLeft + 60 + 'px';
             }
         }
+
+        // direction key press moves the square
+        document.addEventListener('keydown', function(event){
+            if(event.key == 'ArrowLeft'){
+                moveSquare('left');
+            }
+            if(event.key == 'ArrowUp'){
+                moveSquare('top');
+            }
+            if(event.key == 'ArrowDown'){
+                moveSquare('down');
+            }
+            if(event.key == 'ArrowRight'){
+                moveSquare('right');
+            }
+        });
     </script>
 
     <style>
         #square{ 
             width: 120px;
             height: 120px;
-            background-color: royalblue;
+            background: url("shreyas.png");
+            background-position: center;
+            background-size: contain;
             margin: 2rem;
             position: relative;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         }
     </style>
 </body>
