@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element</title>
+</head>
+<body>
+    <div id="square">
+       
+    </div>
+    <button onclick="moveSquare('left')">Left</button>
+    <button onclick="moveSquare('top')">Up</button>
+    <button onclick="moveSquare('down')">Down</button>
+    <button onclick="moveSquare('right')">Right</button>
+
+
+    <script type="text/javascript">
+        function moveSquare(direction){
+            var square = document.getElementById('square');
+            var currentLeft = square.style.left;
+            var currentTop = square.style.top;
+            var currentRight = square.style.right;
+            var currentBottom = square.style.bottom;
+
+            if(currentLeft == ''){
+                currentLeft = 0;
+            }
+            if(currentTop == ''){
+                currentTop = 0;
+            }
+            if(currentRight == ''){
+                currentRight = 0;
+            }
+            if(currentBottom == ''){
+                currentBottom = 0;
+            }
+
+            currentLeft = parseInt(currentLeft);
+            currentTop = parseInt(currentTop);
+            currentRight = parseInt(currentRight);
+            currentBottom = parseInt(currentBottom);
+
+            if(direction == 'left'){
+                square.style.left = currentLeft - 10 + 'px';
+            }
+            if(direction == 'top'){
+                square.style.top = currentTop - 10 + 'px';
+            }
+            if(direction == 'down'){
+                square.style.top = currentTop + 10 + 'px';
+            }
+            if(direction == 'right'){
+                square.style.left = currentLeft + 10 + 'px';
+            }
+        }
+    </script>
+
+    <style>
+        #square{ 
+            width: 120px;
+            height: 120px;
+            background-color: royalblue;
+            margin: 2rem;
+            position: relative;
+        }
+    </style>
+</body>
+</html>
