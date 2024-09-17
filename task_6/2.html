@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element</title>
+</head>
+<body>
+
+    <div id="paras">
+        <p id="demo">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora dolorum magni placeat laudantium harum error?
+        </p>
+    </div>
+    <button onclick="addPara()">Add a Random Paragraph</button>
+
+    <script type="text/javascript">
+        function addPara(){
+            document.getElementById('paras').innerHTML += '<p>' + 'Random number :' + Math.random() + '</p>';
+        }
+    </script>
+</body>
+</html>
