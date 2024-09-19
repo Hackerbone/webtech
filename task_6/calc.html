@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+
+    <style>
+        button{
+            width: 100%;
+            font-size: 20px;
+            background-color: blue;
+            box-shadow: none;
+            border: none;
+            color: white;
+        }
+
+        table{
+            border-color: yellow;
+        }
+    </style>
+
+    <table border="1">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><button onclick="document.getElementById('result').value = ''">C</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="press(1)">1</button></td>
+            <td><button onclick="press(2)">2</button></td>
+            <td><button onclick="press(3)">3</button></td>
+            <td><button onclick="div()">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="press(4)">4</button></td>
+            <td><button onclick="press(5)">5</button></td>
+            <td><button onclick="press(6)">6</button></td>
+            <td><button onclick="sub()">-</button></td>
+        </tr>
+        
+        
+        <tr>
+            <td><button onclick="press(7)">7</button></td>
+            <td><button onclick="press(8)">8</button></td>
+            <td><button onclick="press(9)">9</button></td>
+            <td><button onclick="add()">+</button></td>
+        </tr>
+        
+        <tr>
+            <td><button onclick="press('.')">.</button></td>
+            <td><button onclick="press(0)">0</button></td>
+            <td><button onclick="equal()">=</button></td>
+            <td><button onclick="mul()">*</button></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function press(num){
+            document.getElementById('result').value += num;
+        }
+
+        function add(){
+            document.getElementById('result').value += '+';
+        }
+
+        function sub(){
+            document.getElementById('result').value += '-';
+        }
+
+        function mul(){
+            document.getElementById('result').value += '*';
+        }
+
+        function div(){
+            document.getElementById('result').value += '/';
+        }
+
+        function equal(){
+            document.getElementById('result').value = eval(document.getElementById('result').value);
+        }
+    </script>
+</body>
+</html>
