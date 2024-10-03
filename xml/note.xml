@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<book>
+    <FrontMatter>
+        <Title>XML Developer's Guide</Title>
+        <Author>Kevin Williams</Author>
+        <Date>2000-10-01</Date>
+        <PubInfo>Publish Information</PubInfo>
+    </FrontMatter>
+    <Chapter>
+        <Title>Introduction</Title>
+        <Section>
+            <Title>What is XML?</Title>
+            <Para>XML is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</Para>
+        </Section>
+        <Section>
+            <Title>Why use XML?</Title>
+            <Para>XML is a versatile language that can be used to store and transport data in a structured format.</Para>
+        </Section>
+    </Chapter>
+    <BackMatter>
+        <!--This is a comment-->
+        <References>
+            <Para>Special thanks to my editor, Jane Doe, for her invaluable feedback and support.</Para>
+        </References>
+        <Index>
+            <Term>XML</Term>
+            <Definition>Extensible Markup Language</Definition>
+            
+            <Term>markup language</Term>
+            <Definition>A system for annotating a document in a way that is syntactically distinguishable from the text.</Definition>
+        </Index>
+    </BackMatter>
+</book>

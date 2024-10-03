@@ -1,0 +1,40 @@
+/* Styling the overall document */
+college {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the student block */
+student {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Styling specific elements */
+RegNo, Name, CollegeName, EmailId {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Styling for the registration number */
+RegNo {
+    color: blue;
+}
+
+/* Styling for the name */
+Name {
+    color: green;
+}
+
+/* Styling for the college name */
+CollegeName {
+    color: darkorange;
+}
+
+/* Styling for the email */
+EmailId {
+    color: red;
+}
