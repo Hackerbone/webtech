@@ -1,0 +1,6 @@
+<!ELEMENT college (student+)>
+<!ELEMENT student (RegNo, Name, CollegeName, EmailId)>
+<!ELEMENT RegNo (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT CollegeName (#PCDATA)>
+<!ELEMENT EmailId (#PCDATA)>

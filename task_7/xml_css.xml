@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="college.css"?>
+<!-- <!DOCTYPE college
+[
+    <!ELEMENT college (student+)>
+    <!ELEMENT student (RegNo, Name, CollegeName, EmailId)>
+    <!ELEMENT RegNo (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT CollegeName (#PCDATA)>
+    <!ELEMENT EmailId (#PCDATA)>
+]> -->
+<!DOCTYPE college SYSTEM "college.dtd">
+<college>
+    <student>
+        <RegNo>200953080</RegNo>
+        <Name>Sitaraman S</Name>
+        <CollegeName>MIT Manipal</CollegeName>
+        <EmailId>sitaraman.s18@gmail.com</EmailId>
+    </student>
+    <student>
+        <RegNo>200953122</RegNo>
+        <Name>Shreyas Jha</Name>
+        <CollegeName>MIT Manipal</CollegeName>
+        <EmailId>shreyas@gmail.com</EmailId>
+    </student>
+    <student>
+        <RegNo>200953212</RegNo>
+        <Name>Manoj Tiwari</Name>
+        <CollegeName>MIT Manipal</CollegeName>
+        <EmailId>manoj@gmail.com</EmailId>
+    </student>
+</college>

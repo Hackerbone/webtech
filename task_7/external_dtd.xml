@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="college.css"?>
+<!DOCTYPE college SYSTEM "college.dtd">
 <college>
     <student>
         <RegNo>200953080</RegNo>
