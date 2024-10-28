@@ -29,7 +29,7 @@ def generate_index_html(root_directory):
             if file == "index.html":
                 continue
             # Only include .html, .css, and .js files
-            if file.endswith((".html", ".css", ".js")):
+            if file.endswith((".html", ".css", ".js", ".xml", ".dtd", ".xstd")):
                 file_path = os.path.join(root, file)
                 rel_path = os.path.relpath(file_path, root_directory)
                 html_content += f'<li><a href="{rel_path}">{rel_path}</a></li>'

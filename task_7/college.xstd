@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+    <!-- Template to match the root element <college> -->
+    <xsl:template match="/college">
+        <html>
+        <head>
+            <title>Student Information</title>
+        </head>
+        <body>
+            <h2>Student Information</h2>
+            <table border="1">
+                <tr>
+                    <th>Registration Number</th>
+                    <th>Name</th>
+                    <th>College Name</th>
+                    <th>Email ID</th>
+                </tr>
+
+                <!-- Loop through each student element -->
+                <xsl:for-each select="student">
+                    <tr>
+                        <td><xsl:value-of select="RegNo"/></td>
+                        <td><xsl:value-of select="Name"/></td>
+                        <td><xsl:value-of select="CollegeName"/></td>
+                        <td><xsl:value-of select="EmailId"/></td>
+                    </tr>
+                </xsl:for-each>
+
+            </table>
+        </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>
